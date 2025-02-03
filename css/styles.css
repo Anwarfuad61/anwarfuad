@@ -93,16 +93,27 @@ section {
 }
   .music-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: #16204d;
-    padding: 10px;
-    border-radius: 10px;
-    width: 350px;
+    width: 100%;
     cursor: pointer;
+    background: rgba(255, 255, 255, 0.1); /* Transparan dengan sedikit warna */
+    backdrop-filter: blur(10px); /* Efek blur untuk tampilan modern */
+    border-radius: 15px; /* Membuat sudut membulat */
+    padding: 10px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Border tipis transparan */
+    transition: all 0.3s ease-in-out;
+}
+/* Efek hover */
+.music-container:hover {
+  background: rgba(255, 255, 255, 0.096);
+  transform: scale(1.05);
 }
 .music-container img {
-    width: 50px;
-    height: 50px;
+  max-width: 10%;
+  height: auto;
+  display: block;
     border-radius: 5px;
     margin-right: 10px;
     object-fit: cover;
