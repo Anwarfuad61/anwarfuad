@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Anwar Fuad - Portfolio</title>
+  <!-- STYLESHEET -->
+  <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    referrerpolicy="no-referrer" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+  <link href="css/about.css" rel="stylesheet">
+  <link href="css/projects.css" rel="stylesheet">
+  <link href="css/certificates.css" rel="stylesheet">
+  <link href="css/contact.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-TRM84YRGD7');
+  </script>
+</head>
+
+<body class="portfolio">
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="navbar-btn active-btn" data-id="home">
+      <i aria-label="home" class="fas fa-home" style="color:var(--icons)"></i>
+    </div>
+    <div aria-label="about" class="navbar-btn" data-id="about">
+      <i class="fas fa-user" style="color:var(--icons)"></i>
+    </div>
+    <div aria-label="projects" class="navbar-btn" data-id="projects">
+      <i class="fas fa-laptop" style="color:var(--icons)"></i>
+    </div>
+    <div aria-label="certificates" class="navbar-btn" data-id="certificates">
+      <i class="far fa-newspaper" style="color:var(--icons)"></i>
+    </div>
+    <div aria-label="contact" class="navbar-btn" data-id="contact">
+      <i class="fas fa-envelope-open" style="color:var(--icons)"></i>
+    </div>
+  </div>
+  <div class="theme-btn">
+    <i class="fas fa-moon" style="color:var(--icons)"></i>
+  </div>
+  <!-- END NAVBAR -->
+
+  <!-- HOME -->
+  <header class="container header active" id="home">
+    <div class="header-content">
+      <div class="left-header">
+        <div class="intro">
+          <span id="greeting">Hello 👋! I'm</span>
+          <h1 id="name">Anwar Fuad</h1>
+          <span id="typing"></span>
+        </div>
+        <div class="btn-con">
+          <a class="main-btn"
+            href="./img/file/cvtokAnwarfuadANYAR.pdf"
+            target="_blank">
+            <span class="btn-text">Download CV</span>
+            <span class="btn-icon"><i class="fas fa-download" style="color:var(--icons)"></i></span>
+          </a>
+        </div>
+        <div id="now-playing">
+          <p>Recently listened to 🎵:</p>
+          <div class="music-container" onclick="togglePlay()">
+            <img src="img/download.jpeg" alt="Album Cover">
+            <div class="music-info">
+                <div class="title">Lady Gaga Bruno Mars</div>
+                <div class="artist">Die With A Smile</div>
+            </div>
+            <div class="duration">04:12</div>
+            <div class="heart">❤️</div>
+        </div>
+          <audio id="audio-player" controls>
+              <source src="Lady Gaga Bruno Mars - Die With A Smile (Official Music Video).mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+          </audio>
+      </div>
+      </div>
+      <div class="right-header">
+        <div class="image profile-image">
+          <img alt="profile_pic" src="img/paspoto.png">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END HOME -->
+  <script>
+    document.getElementById("now-playing").addEventListener("click", function() {
+        let audio = document.getElementById("audio-player");
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    });
+</script>
+
+  <main>
+    <!-- ABOUT -->
+    <section class="container about" id="about">
+      <div class="main-title">
+        <h2>About me</h2>
+      </div>
+      <!-- <div class="about-container"> -->
+      <!-- <div class="left-about"> -->
+      <div>
+        <div>
+          <br><br>
+          <p>
+            Saya Anwar Fuad, lulusan D3 Teknik Komputer dari Politeknik Harapan Bersama dengan IPK 3.59. Saya memiliki minat yang kuat dalam pengembangan sistem informasi dan manajemen data, serta berpengalaman dalam menggunakan berbagai tools seperti PHP Native, QGIS, dan Microsoft Office. Saya selalu berusaha untuk terus belajar dan berkembang dalam bidang teknologi informasi.
+            <br><br>
+            Saya memiliki pengalaman sebagai Staff Gudang di CV. Guna Jaya, di mana saya mengelola data stok barang, membuat laporan penjualan dan pembelian, serta mengembangkan website sederhana untuk pengelolaan stok barang. Saya juga pernah magang di Kantor Badan Pusat Statistik Kota Tegal, di mana saya membangun sistem informasi absensi mahasiswa magang dan melakukan entry data dalam program Regsosek.
+            <br><br>
+            Saya memiliki keahlian dalam manajemen data, pengembangan sistem informasi, dan penggunaan software office seperti Microsoft Excel, Word, dan PowerPoint. Saya juga berpengalaman dalam kolaborasi tim dan selalu siap untuk menghadapi tantangan baru
+          </p>
+          <br><br>
+          <div class="btn-con">
+            <a class="main-btn"
+              href="img/file/cvtokAnwarfuadANYAR.pdf"
+              target="_blank">
+              <span class="btn-text">Download CV</span>
+              <span class="btn-icon"><i class="fas fa-download" style="color:var(--icons)"></i></span>
+            </a>
+          </div>
+          <br><br>
+        </div>
+        <!-- <div class="right-about">
+      <div class="about-item">
+        <div class="abt-text">
+          <p class="large-text">130+</p>
+          <p class="small-text">Hours of<br/> Python</p>
+        </div>
+      </div>
+      <div class="about-item">
+        <div class="abt-text">
+          <p class="large-text">30+</p>
+          <p class="small-text">Hours of<br/> Jupyter</p>
+        </div>
+      </div>
+      <div class="about-item">
+        <div class="abt-text">
+          <p class="large-text">460+</p>
+          <p class="small-text">GitHub <br/> Contributions</p>
+        </div>
+      </div>
+    </div> -->
+      </div>
+      <div class="about-stats">
+        <h4 class="stat-title">Education</h4>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-university" style="color:var(--icons)"></i>
+            </div>
+            <p class="tl-duration">2022 - 2024</p>
+            <h5>College<span> - Politeknik Harapan Bersama Kota Tegal</span></h5>
+            <p>
+              Diploma degree in Computer Science and Technology. Have a GPA of 3.59
+            </p>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-icon">
+              <i class="fas fa-university" style="color:var(--icons)"></i>
+            </div>
+            <p class="tl-duration">2017 - 2020</p>
+            <h5>School<span> - Smk Negri 2 Slawi</span></h5>
+            <p>
+              Studying here for standards 10 through 12 with a minor in light vehicle engineering.
+            </p>
+          </div>
+                  </div>
+      <h4 class="stat-title">My Experience</h4>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fas fa-briefcase" style="color:var(--icons)"></i>
+          </div>
+          <p class="tl-duration">August 2021 - March 2022</p>
+          <h5>Staff Gudang<span> - CV Guna jaya</span></h5>
+          <p>
+            As a Warehouse Staff at CV. Guna Jaya, I manage stock data using a computer system.
+             I create sales and purchase reports with Microsoft Excel to ensure the data is accurate. 
+             In addition, I fix problems on computer devices to keep operations running smoothly. 
+             To improve efficiency, I also developed a simple website that helps the team manage and monitor stock items.
+         <!-- Sebagai Staff Gudang di CV. Guna Jaya, saya mengelola data stok barang menggunakan sistem komputer. Saya membuat laporan penjualan dan pembelian dengan Microsoft Excel untuk memastikan data akurat. Selain itu, saya memperbaiki masalah pada perangkat komputer agar operasional berjalan lancar. Untuk meningkatkan efisiensi, saya juga mengembangkan website sederhana yang membantu tim dalam mengelola dan memantau stok barang-->
+            </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fas fa-briefcase" style="color:var(--icons)"></i>
+          </div>
+          <p class="tl-duration">December 2022 - February 2023</p>
+          <h5>Magang<span> - BADAN PUSAT STATISTIK KOTA TEGAL (BPS)</span></h5>
+          <p>
+            During my internship at the Tegal City Statistics Agency (BPS) Office, 
+            I built an attendance information system for student interns using PHP Native. 
+            I was also responsible for data entry in the Regsosek 2022-2023 program. In addition, 
+            I managed the BPS Tegal inventory application and used QGIS for georeferenced mapping to support mapping and data analysis activities.
+          <!-- Selama magang di Kantor Badan Pusat Statistik (BPS) Kota Tegal, saya membangun sistem informasi absensi mahasiswa magang menggunakan PHP Native. Saya juga bertanggung jawab melakukan entry data dalam program Regsosek 2022-2023. Selain itu, saya mengelola aplikasi inventory BPS Tegal dan menggunakan QGIS untuk pemetaan georeferensi guna mendukung kegiatan pemetaan dan analisis data.-->
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END ABOUT -->
+
+
+    <!--PROJECTS-->
+    <section class="container" id="projects">
+      <div class="main-title">
+        <h2><span>Portfolio</span></h2>
+      </div>
+      <p class="port-text">
+        Behold, the museum of my digital creations!
+      </p>
+      <div class="projects">
+        <div class="project-item">
+          <div class="image">
+            <img alt="" src="img/portfolio/home.jpg">
+            <label>Absensi magang mahasiswa</label>
+          </div>
+          <div class="hover-items">
+            <h3> absensi mahasiswa</h3>
+            <br>
+            <p>
+              Ini adalah projek saya pada saat magang di Kantor badan pusat statistik tegal.
+            </p>
+            <div class="badge">
+              <img alt="html"
+                src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                                style="height: 2rem; width: 9rem">
+              <img alt="javascript"
+                src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"
+                style="height: 2rem; width: 10rem;">
+                          </div>
+
+            <div class="icons">
+              <a class="icon" href="https://github.com/Anwarfuad61/Aplikasi-Absensi-dan-Kegiatan-Harian-Mahasiswa-berbasis-Web" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="image">
+            <img alt=""
+              src="img/portfolio/sdr.JPG">
+            <label>Website Soedara Ngopi</label>
+          </div>
+          <div class="hover-items">
+            <h3>Kafe Soedara Ngopi</h3>
+            <br>
+            <p>
+              proyek Website Soedara Ngopi  adalah sebuah situs web portfolio atau informasi untuk kafe Soedara Ngopi.
+
+            </p>
+            <div class="badge">
+              <img alt="css"
+                src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                style="height: 2rem; width: 6rem">
+              <img alt="html"
+                src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                style="height: 2rem; width: 6rem">
+              <img alt="javascript"
+                src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"
+                style="height: 2rem; width: 7rem">
+            </div>
+
+            <div class="icons">
+              <a class="icon" href="https://github.com/Anwarfuad61/soedarangopi" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="image">
+            <img alt=""
+              src="img/portfolio/python.jpg">
+            <label>Fruit Ripeness Classifier</label>
+          </div>
+          <div class="hover-items">
+            <h3>Fruit Ripeness Classifier</h3>
+            <br>
+            <p>
+              Proyek Python ini menggunakan computer vision dan machine learning untuk mengklasifikasikan kematangan buah (mentah, setengah matang, matang). Berguna untuk pertanian, ritel, atau penggunaan pribadi.            </p>
+            <div class="badge">
+              <img alt="python"
+                src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+                style="height: 2rem; width: 6rem">
+              <img alt="Jupyter notebook"
+                src="https://img.shields.io/badge/Jupyter-1F1F1F?style=for-the-badge&logo=JupyterNotebook"
+                style="height: 2rem; width: 6.5rem">
+                         </div>
+
+            <div class="icons">
+              <a class="icon" href="https://github.com/Anwarfuad61/project-python-kuliah-phb" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="image">
+            <img alt="" src="img/portfolio/absensikaryawan.JPG"><label>Absensi Karyawan face recognition Esp32-cam</label>
+          </div>
+          <div class="hover-items">
+            <h3>Face Recognition Absensi</h3>
+            <br>
+            <p>
+              Sistem absensi berbasis pengenalan wajah menggunakan ESP32-CAM. Menggabungkan IoT dan machine learning untuk mencatat kehadiran secara otomatis dengan akurat</p>
+            <div class="badge">
+              <img alt="php"
+                src="https://img.shields.io/badge/php-%237777BB.svg?style=for-the-badge&logo=php&logoColor=white"
+                style="height: 2rem; width: 7rem">
+              <img alt="c++"
+                src="https://img.shields.io/badge/c%2B%2B-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+                style="height: 2rem; width: 9rem">
+              
+            </div>
+
+            <div class="icons">
+                         <a class="icon" href="https://github.com/Anwarfuad61/tugasakhir_absensikaryawanfacerecognitionEsp32cam/tree/main" target="_blank">
+                         <i class="fab fa-github"></i>
+                      </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <div class="image">
+            <img alt="" src="img/portfolio/11.png">
+            <label>Game StartWar</label>
+          </div>
+          <div class="hover-items">
+            <h3>Android Game</h3>
+            <br>
+            <p>
+              project ini dikembangkan menggunakan software greenfoot.
+            </p>
+            <div class="badge">
+              <img alt="Android"
+                src="https://img.shields.io/badge/android-3DDC84?style=for-the-badge&logo=android&logoColor=white"
+                style="height: 2rem; width: 10rem">
+              <img alt="java"
+                src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"
+                style="height: 2rem; width: 7.5rem">
+                          </div>
+
+            <div class="icons">
+              <a class="icon" href="https://github.com/Anwarfuad61/Starwar-anwarfuad-21041071" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+                 </div>
+        </div>
+
+
+      </div>
+    </section>
+    <!--  END PROJECTS-->
+
+    <!--  CERTIFICATES-->
+    <section class="container" id="certificates">
+      <div class="certificate-section">
+        <div class="main-title">
+          <h2><span>Certificates</span></h2>
+          <p>
+            Some of the certificates I have earned have been showcased here. Click the images to view.
+        </p>
+            </div>
+        <div class="certificates">
+
+          <div class="certificate-item">
+            <a href="https://drive.google.com/file/d/1-vxNA1-yiyGSF8v3a-YJtY7SwBHLOvG2/view?usp=drive_link"
+              target="_blank">
+              <img src="img/sertifikat/junior komputer bnsp.jpg"
+                alt="Image" >
+            </a>
+            <div class="certificate-name">
+              <h4>
+                junior komputer bnsp Certificate
+              </h4>
+              <p>
+                - Course.<br>
+                This program certifies my competency in foundational computer skills, validated by the National Professional Certification Agency (BNSP). Through Coursera, I gained essential knowledge and practical expertise in IT fundamentals, preparing me for professional roles in the technology field.
+              </p>
+            </div>
+          </div>
+
+          <div class="certificate-item">
+            <a href="https://drive.google.com/file/d/1oP4Z_vyv16-JzMg3Jc2QJY_hBEdhFADa/view?usp=drive_link"
+              target="_blank">
+              <img
+                src="img/sertifikat/SERTIFIKAT KOMPUTER_11zon.jpg"
+                alt="">
+            </a>
+            <div class="certificate-name">
+              <h4>
+                Microsoft office basic certificate
+              </h4>
+              <p>
+                - Course.<br>
+                This certificate validates my foundational skills in Microsoft Office applications, including Word, Excel, and PowerPoint. Through this course, I gained practical knowledge to efficiently create, edit, and manage documents, spreadsheets, and presentations.
+              </p>
+            </div>
+          </div>
+
+          <div class="certificate-item">
+            <a href="https://drive.google.com/file/d/1gsEHn9EBueRg71ozmIfXOw_Yhg_cH0tx/view?usp=drive_link" target="_blank">
+              <img src="img/sertifikat/tofel.jpg"
+                alt="">
+            </a>
+            <div class="certificate-name">
+              <h4>
+                Toefel Certificate
+              </h4>
+              <p>
+                - Official English Proficiency Test.<br>
+                This certificate demonstrates my proficiency in the English language, covering reading, listening, speaking, and writing skills. Achieving this certification highlights my ability to communicate effectively in academic and professional environments.
+              </p>
+            </div>
+          </div>
+
+          <div class="certificate-item">
+            <a href="https://drive.google.com/file/d/1UV2Zrlpq-Qs2t2kwDrZ_ify_xrYeDgsI/view?usp=drive_link"
+              target="_blank">
+              <img
+                src="img/sertifikat/python basic.png"
+                alt="">
+            </a>
+            <div class="certificate-name">
+              <h4>
+                Huawai Python basic Certificate
+              </h4>
+              <p>- Huawei ICT Academy. <br>
+              This certification validates my foundational skills in Python programming, covering syntax, data structures, and basic algorithms. Through Huawei's industry-aligned curriculum, I gained hands-on experience in writing efficient code and solving real-world programming challenges.
+            </p>
+            </div>
+          </div>
+
+          <div class="certificate-item">
+            <a href="https://drive.google.com/file/d/1VDD3UE1nNU0cmi0bgjH45XgzGRUWkae5/view?usp=drive_link"
+              target="_blank">
+              <img
+                src="img/sertifikat/sertifikatsoloearn htlm.png"
+                alt="">
+            </a>
+            <div class="certificate-name">
+              <h4>
+                Html Basic certificate
+              </h4>
+              <p>
+                - Online Course. <br>
+                This certification demonstrates my foundational understanding of HTML, including creating and structuring web pages, using tags, and embedding multimedia. Through this course, I gained the essential skills to build and design basic websites.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--  END CERTIFICATES-->
+
+    <!--  CONTACT-->
+    <section class="container contact" id="contact">
+      <div class="contact-container">
+        <div class="main-title">
+          <h2><span>Contact</span></h2>
+        </div>
+        <div class="contact-content-con">
+          <div class="left-contact">
+            <p>
+              Ada pertanyaan? Ingin mengobrol? Atau mungkin ingin mengirim undangan multipemain? Apa pun itu, kotak masuk saya terbuka untuk semua!
+            </p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Location:</span>
+                </div>
+                <p>
+                  Jawa Tengah, Indonesia
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-envelope"></i>
+                  <span>Email ID:</span>
+                </div>
+                <a href="mailto: aishikm2002@duck.com">
+                  <p>
+                    <span class="highlight">anwarfuad0987@gmail.com</span>
+                  </p>
+                </a>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fab fa-telegram"></i>
+                  <span>Telegram Username:</span>
+                </div>
+                <a href="https://t.me/anwarfuad_231">
+                  <p>
+                    <span class="highlight">@anwarfuad_231</span>
+                  </p>
+                </a>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-globe-asia"></i>
+                  <span>Spoken languages:</span>
+                </div>
+                <p>
+                  <span>Indonesia, English</span>
+                </p>
+              </div>
+            </div>
+            <div class="contact-icons">
+              <div class="contact-icon">
+                <a href="https://www.facebook.com/anwar.slankrs/" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/anwar_fuad123/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/Anwarfuad61" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://t.me/anwarfuad_231" target="_blank">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/anwarfuad231/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="right-contact">
+            <form action="https://formspree.io/f/xzzdgkjw" class="contact-form" method="POST">
+              <div class="input-control i-c-2">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
+              </div>
+              <div class="input-control">
+                <input type="text" name="subject" required placeholder="Subject">
+              </div>
+              <div class="input-control">
+                <textarea name="message" id="" cols="15" rows="8" placeholder="Message"></textarea>
+              </div>
+              <button class="send-button" type="submit">
+                SEND
+              </button>
+              <div><br></div>
+              <div class="btn-con">
+                <a href="img/file/cvtokAnwarfuadANYAR.pdf"
+                  class="main-btn" target="_blank">
+                  <span class="btn-text">Download CV</span>
+                  <span class="btn-icon"><i class="fas fa-download" style="color: var(--icons)"></i></span>
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  END CONTACT-->
+  </main>
+  <script src="js/bar.js"></script>
+  <script src="js/vendor/modernizr.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/typing.js"></script>
+</body>
+
+</html>
